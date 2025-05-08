@@ -1,0 +1,12 @@
+# Ignorar node_modules (si usas Hardhat/Truffle)
+node_modules/
+# Ignorar archivos de compilación
+build/
+artifacts/
+cache/
+# Ignorar claves privadas o archivos sensibles
+.env
+*.key
+# Ignorar archivos temporales
+*.log
+*.swp
