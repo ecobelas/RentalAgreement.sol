@@ -1,6 +1,6 @@
 # RentalAgreement.sol
 Rental Agreement on blockchain 
-Using this smart contracto you will be able to start a rental agreement between landlord and tenant
+Using this smart contract you will be able to start a rental agreement between landlord and tenant
 
 BEFORE DEPLOYING
 
