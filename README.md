@@ -17,18 +17,7 @@ To deploy correctly you have to input:
 AFTER DEPLOYING (ONE TIME)
 
 0. Time is clicking, startTime = block.timestamp (taken when the contract has been launched).
-1. Step number one is on the tenant side and is to deposit the guarantee using the "depositGuarantee" function, but here, you will have an extra step, you have to aprobe the guarantee amount to this contract address (this step is not explicit in this contract, you have to deploy this IERC20 interface:
-------------------------------------------------------------------------------------------------------
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-interface IERC20 {
-    function balanceOf(address account) external view returns (uint256);
-    function allowance(address owner, address spender) external view returns (uint256);
-    function approve(address spender, uint256 amount) external returns (bool);
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-}
---------------------------------------------------------------------------------------------------------
+1. Step number one is on the tenant side and is to deposit the guarantee using the "depositGuarantee" function, but here, you will have an extra step, you have to aprobe the guarantee amount to this contract address (this step is not explicit in this contract, you have to deploy the IERC20 interface)
 Use the aprove function, here you have to input the amount to aprove "guaranteeAmount" and the "contract address", after aproving you will be able to execute the "depositGuarantee" function). 
 2. Now you can check in "guarantee Deposited" function (should be true) and if you call "guaranteeBalance" function, should show the "guaranteeAmount" (guarantee balance  = guarantee amount).
 
