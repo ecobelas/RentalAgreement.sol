@@ -6,9 +6,9 @@ ANTES DE IMPLEMENTAR
 
 Para implementar correctamente, debe ingresar:
 
-1. Dirección del propietario.
-2. Dirección del inquilino.
-3. Dirección del contrato del token (ej.: 0xc2132D05D31c914a87C6611C10748AEb04B58e8F para USDT en la red principal de Poligon).
+1. Dirección (address) del propietario.
+2. Dirección (address) del inquilino.
+3. Dirección (address) del contrato del token (ej.: 0xc2132D05D31c914a87C6611C10748AEb04B58e8F para USDT en la red principal de Poligon).
 4. Monto de la renta mensual (ej.: 500 USDT = 500000000, ya que USDT usa 6 ceros).
 5. Meses de garantía (ej.: 3, siguiendo el ejemplo anterior de 500 USDT, 3 x 500 = 1500, por lo que la garantía solicitada en este contrato será de 1500 USDT).
 6. Años del contrato: indique la duración del contrato en años. Fecha límite de pago: (p. ej.: 10; esto significa que el inquilino tiene 10 días después del inicio del mes para pagar la renta).
